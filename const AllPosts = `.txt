@@ -1,0 +1,32 @@
+const AllPosts = `
+ query AllPosts {
+    posts (orderBy:
+    publishedAt_DESC) {
+        id
+        excerpt
+        slug
+        title
+        date
+    }
+  }
+ `
+
+const SinglePage = `
+ query SinglePage ($slug: String!) {
+    page (where: { slug: $slug}) {
+        title
+        seoOverride {
+        image {
+            height
+            width 
+            url
+        }
+        description
+    }
+    content {
+        html
+        raw
+    }
+ }
+}
+ `
