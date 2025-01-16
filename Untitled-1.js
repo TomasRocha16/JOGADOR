@@ -1,5 +1,5 @@
 <ul className ="divide-y divide-gray-200">
- allPosts.map((post)) => {
+ { allPosts.map((post) => {
  return (
     <li key={post.id} className= "py-12">
         <article className="space-y-2 xl.grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
@@ -14,7 +14,7 @@
                         })}
                         </time>
                     </dd>
-                </dl>
+                 </dl>
                 <div className="space-y-5 xl:col-span-3">
                     <div className="space-y-6">
                         <h2 className="text-2xl leading-8 font-bold tracking-tight">
@@ -22,6 +22,9 @@
                             href={`/posts/${post.slug}`}
                             className="text-gray-900"
                             >
+                                {post.title}
+                             </Link>
+                              </h2>
                                 {post.excerpt && (
                                     <div className= "prose max-w-none text-gray-500">
                                         {post.excerpt}
