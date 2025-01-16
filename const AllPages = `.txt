@@ -1,4 +1,4 @@
-const AllPages = `
+const AllPages =`
  query AllPages {
     pages {
         id
