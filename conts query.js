@@ -1,4 +1,4 @@
-conts query = `
+const query = `
 query Test ($navId:String!) {
 navigation (where: {navID: $navId})} {
  id
