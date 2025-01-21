@@ -1,5 +1,5 @@
 <ul className ="divide-y divide-gray-200">
- { allPosts.map((post) => {
+ { allPosts.map((post)) => {
  return (
     <li key={post.id} className= "py-12">
         <article className="space-y-2 xl.grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
